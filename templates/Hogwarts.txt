@@ -1,0 +1,141 @@
+# v1.1
+
+# Configure Rolls
+rollFormula = "2d6"
+rollShifting = true
+
+# Define roll result ranges.
+[rollResults]
+  [rollResults.success]
+    range = "10+"
+    label = "Sucesso!"
+  [rollResults.partial]
+    range = "7-9"
+    label = "Sucesso Parcial."
+  [rollResults.failure]
+    range = "6-"
+    label = "Falha..."
+
+########################################
+## CHARACTERS ##########################
+########################################
+# Define the character group.
+[character]
+
+  # Define stats.
+  [character.stats]
+    bravura = "Bravura"
+    astucia = "Ástucia"
+    intelecto = "Intelecto"    
+    lealdade = "Lealdade"   
+    magia = "Magia"
+
+  # Define attributes.
+  [character.attributesTop]
+    [character.attributesTop.xp]
+      type = "Xp"
+      label = "Experiência"
+      description = "Com 4 você pode fazer um Aprimoramento! Limpe sua Experiência em seguida."
+      max = 4
+      default = 0        
+    [character.attributesTop.advances]
+      type = "Number"
+      label = "Aprimoramentos"
+      description = "Toda vez que colocar um aprimoramento no personagem, some 1 aqui."
+      default = 0  
+    [character.attributesTop.luck]
+      type = "Clock"
+      label = "Sorte"
+      description = "Marque para fazer algo que você normalmente não poderia ou mudar um resultado para um 10+."
+      max = 3
+      default = 0   
+
+  # Define sidebar details.
+  [character.attributesLeft]
+    [character.attributesLeft.conditions]
+      type = "ListMany"
+      label = "Conditions"
+      description = "Marque todas e role +sua característica mais alta para ver se você sai da história."
+      condition = true
+      options = [
+        "Assustado (-2 Bravura)",
+        "Irritado (-2 Ástucia)",
+        "Estressado (-2 Intelecto)",
+        "Invejoso (-2 Lealdade)",
+        "Envergonhado (-2 Magia)",
+        "Ferido (-1)",
+        "Azarado (-1)",
+        "Inconsciente"
+      ]  
+    [character.attributesLeft.materiapreferida]
+      type = "Text"  
+      label = "Matéria Favorita"
+      description = "Você pode adicionar +1 para qualquer rolagem relacionada com sua Matéria Favorita."
+    [character.attributesLeft.casa]
+      type = "ListOne"
+      label = "Casa"
+      options = [
+        "Grifinória",
+        "Corvinal",
+        "Lufa-Lufa",
+        "Sonserina"
+      ]
+    [character.attributesLeft.ano]
+      type = "ListOne"
+      label = "Ano"
+      options = [
+        "Primeiro",
+        "Segundo",
+        "Terceiro",
+        "Quarto",
+        "Quinto"
+      ]
+    [character.attributesLeft.ascendencia]
+      type = "ListOne"
+      label = "Ascendência"
+      options = [
+        "Nascido-trouxa",
+        "Mestiço",
+        "Sangue puro"
+      ]
+    [character.attributesLeft.cicatrizes]
+      description = "Se você não sair da história, você passa a ter uma nova cicatriz física ou mental."
+      type = "LongText"      
+    [character.attributesLeft.ambicao]
+      type = "Text"
+    [character.attributesLeft.patrono]
+      type = "Text" 
+
+
+  # Define groups for moves.
+  [character.moveTypes]
+    basic = "Básicos"
+    magic = "Mágicos"
+    relationships = "Relacionamentos"
+
+  # Define groups for equipment.
+  [character.equipmentTypes]
+    materialescolar = "Material Escolar"
+    spell = "Feitiços"
+    objetosmagicos = "Objetos Mágicos"
+    pet = "Pets"
+
+########################################
+## NPCS ################################
+########################################
+# Define stats.
+[npc]
+  # Define attributes.
+  [npc.attributesTop]
+      
+  [npc.attributesLeft]
+
+  # Define logical groups for moves.
+  [npc.moveTypes]
+    moves = "Movimentos"
+  # Define groups for equipment.
+  [npc.equipmentTypes]
+    materialescolar = "Material Escolar"
+    spell = "Feitiços"
+    objetosmagicos = "Objetos Mágicos"
+    pet = "Pets"
