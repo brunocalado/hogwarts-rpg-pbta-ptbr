@@ -1,7 +1,7 @@
 # Hogwarts RPG - Português do Brasil
 Hogwarts RPG usa o sistema PBTA. Você deve ativar esse módulo no sistema PBTA e então carregar o modelo de ficha manualmente.
 
-O modelo de ficha se encontra nesse [link](https://raw.githubusercontent.com/brunocalado/hogwarts-rpg-for-pbta/main/templates/Hogwarts.txt). Copie e cole o texto em Sheet Configuration.
+O modelo de ficha se encontra nesse [link](https://raw.githubusercontent.com/brunocalado/hogwarts-rpg-pbta-ptbr/main/templates/Hogwarts.txt). Copie e cole o texto em Sheet Configuration.
 <p align="center">
   <img width="500" src="assets/docs/sheet_configuration.webp">
 </p>
