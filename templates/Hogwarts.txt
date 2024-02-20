@@ -1,4 +1,4 @@
-# v1.2
+# v1.3
 
 # Configure Rolls
 rollFormula = "2d6"
@@ -49,6 +49,10 @@ rollShifting = true
       description = "Marque para fazer algo que você normalmente não poderia ou mudar um resultado para um 10+."
       max = 3
       default = 0   
+    [character.attributesTop.materiapreferida]
+      type = "Text"  
+      label = "Matéria Favorita"
+      description = "Você pode adicionar +1 para qualquer rolagem relacionada com sua Matéria Favorita."
 
   # Define sidebar details.
   [character.attributesLeft]
@@ -67,10 +71,18 @@ rollShifting = true
         "Azarado (-1)",
         "Inconsciente"
       ]  
-    [character.attributesLeft.materiapreferida]
-      type = "Text"  
-      label = "Matéria Favorita"
-      description = "Você pode adicionar +1 para qualquer rolagem relacionada com sua Matéria Favorita."
+    [character.attributesLeft.amigoserivais1]
+      type = "Text" 
+      label = "Amigo 1"   
+      description = "+1 a uma rolagem para ajudá-lo ou atrapalhá-lo."      
+    [character.attributesLeft.amigoserivais2]
+      type = "Text" 
+      label = "Amigo 2"
+      description = "+1 a uma rolagem para ajudá-lo ou atrapalhá-lo."      
+    [character.attributesLeft.amigoserivais3]
+      type = "Text" 
+      label = "Rival"      
+      description = "+1 a uma rolagem para ajudá-lo ou atrapalhá-lo."      
     [character.attributesLeft.casa]
       type = "ListOne"
       label = "Casa"
@@ -103,15 +115,16 @@ rollShifting = true
       type = "LongText"      
     [character.attributesLeft.ambicao]
       type = "Text"
+      label = "Ambição"      
     [character.attributesLeft.patrono]
       type = "Text" 
+      label = "Patrono"      
 
 
   # Define groups for moves.
   [character.moveTypes]
     basic = "Básicos"
     magic = "Mágicos"
-    relationships = "Relacionamentos"
     quadribol = "Quadribol"    
 
   # Define groups for equipment.
