@@ -17,4 +17,7 @@ Use as cenas importadadas para consulta rápida.
 
 # License
 The text is under Creative Commons BY-NC-SA 4.0 License. Check it out at: https://dbb-8.itch.io/hogwarts-rpg
- 
+
+Quadribol image: Dados Críticos:
+- https://discord.com/channels/728447419632844811/728447419632844814/812070260299005952 
+- https://www.youtube.com/channel/UClZr8ml8EIEK8W89renberQ
