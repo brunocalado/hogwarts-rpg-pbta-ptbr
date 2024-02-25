@@ -1,4 +1,4 @@
-# v1.3
+# v1.4
 
 # Configure Rolls
 rollFormula = "2d6"
@@ -58,7 +58,7 @@ rollShifting = true
   [character.attributesLeft]
     [character.attributesLeft.conditions]
       type = "ListMany"
-      label = "Conditions"
+      label = "Condições"
       description = "Marque todas e role +sua característica mais alta para ver se você sai da história."
       condition = true
       options = [
