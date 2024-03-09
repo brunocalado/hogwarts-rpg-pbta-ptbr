@@ -15,6 +15,16 @@ Apenas arraste o que quer para a ficha. Você pode arrastar uma pasta e tudo den
 
 Use as cenas importadadas para consulta rápida.
 
+# Instalação
+Vá em módulos na interface de adminstração e clique instalar.
+
+Depois cole o seguinte link em manifest
+https://raw.githubusercontent.com/brunocalado/hogwarts-rpg-pbta-ptbr/main/module.json
+
+<p align="center">
+  <img width="500" src="assets/docs/manifest.webp">
+</p>
+
 # License
 The text is under Creative Commons BY-NC-SA 4.0 License. Check it out at: https://dbb-8.itch.io/hogwarts-rpg
 
